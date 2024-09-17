@@ -1,23 +1,31 @@
 const helpObj = {
   "commands": [
     [
-    "'about'",
-    "Who made this website?",
+    "'gui'",
+    "View a GUI-version of this site"
     ],
     [
-      "'projects'",
-      "Maybe there's something interesting."
+    "'about'",
+    "Who's this Kiley lady?"
+    ],
+    [
+      "'blog'",
+      "Projects, thoughts, maybe somthing interesting."
+    ],
+    [
+      "'music'",
+      "A playlist of my favorite tunes, refreshed weekly."
     ],
     [
       "'whoami'",
-      "A perplexing question."
+      "A harder question than you'd expect."
     ],
     ["'sudo'",
       "???"
     ],
     [
       "'repo'",
-      "View the Github Repository."
+      "View the Github Repository for this site's original code."
     ],
     ["'banner'",
       "Display the banner."

@@ -1,34 +1,43 @@
 {
   "ascii": [
-    "███████╗██╗  ██╗███████╗██╗     ██╗",
-    "██╔════╝██║  ██║██╔════╝██║     ██║",
-    "███████╗███████║█████╗  ██║     ██║",
-    "╚════██║██╔══██║██╔══╝  ██║     ██║",
-    "███████║██║  ██║███████╗███████╗███████╗",
-    "╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝"
+  "Startup processing is complete.",
+  " ",
+  ":HELLO VISITOR",
+  "#S1/15/LOGON FOR: TRANSIT.SYS,VISITOR ON LDEV #80",
+  "K3000 Release: G.35.00 User Version: G.35.00 FRI, 13 SEP 2024 03:35:42",
+  "MPE/KILOΔ HP32033 G.937206415213 Copyright 1989. All Rights Reserved.",
+  " ",
+  "W E L C O M E  T O",
+  "██╗  ██╗██╗██╗      ██████╗ ██████╗ ███████╗██╗  ████████╗ █████╗ ",
+  "██║ ██╔╝██║██║     ██╔═══██╗██╔══██╗██╔════╝██║  ╚══██╔══╝██╔══██╗",
+  "█████╔╝ ██║██║     ██║   ██║██║  ██║█████╗  ██║     ██║   ███████║",
+  "██╔═██╗ ██║██║     ██║   ██║██║  ██║██╔══╝  ██║     ██║   ██╔══██║",
+  "██║  ██╗██║███████╗╚██████╔╝██████╔╝███████╗███████╗██║   ██║  ██║",
+  "╚═╝  ╚═╝╚═╝╚══════╝ ╚═════╝ ╚═════╝ ╚══════╝╚══════╝╚═╝   ╚═╝  ╚═╝"
   ],
-  "title": "WebShell",
-  "username": "visitor",
-  "hostname": "webshell",
-  "password": "050823",
+  "title": "kilodelta webterm",
+  "username": "VISITOR",
+  "hostname": "TRANSIT.SYS",
+  "password": "937206415213",
   "repoLink": "https://github.com/nasan016/webshell",
+  "musicLink": "https://music.apple.com/us/playlist/pl.pm-20e9f373919da08096da08d57f08ba42",
+  "blogLink": "https://blog.kilodelta.com",
+  "guiLink": "https://kiley.me",
+  "resumeLink": "https://kiley.me/kiley-davidson-resume.pdf",
   "social": {
-    "email": "your@email.com",
-    "github": "yourgithub",
-    "linkedin": "you"
+    "email": "kiley@kilodelta.com",
+    "keybase": "kilodelta",
+    "github": "kd8drx",
+    "linkedin": "kilodelta",
+    "threads": "kilodelta",
+    "instagram": "kilodelta"
   },
-  "aboutGreeting": "Hi stranger. Welcome to WebShell.",
-  "projects": [
-    [
-      "GofeR",
-      "Vue.js reactivity in Go.",
-      "https://github.com/nasan016/gofer"
-    ],
-    [
-      "WebShell",
-      "Terminal styled website.",
-      "https://github.com/nasan016/webshell"
-    ]
+  "aboutGreeting": [
+    "Hi, I'm Kiley! 🏳️‍⚧️🏳️‍🌈",
+    "If hobbies were cats, I'd be a crazy cat lady. Alas, I merely have two cats - plus a dog, and a wife.",
+    "Besides my work in tech, I'm a <a target='_blank' href='https://qrz.com/db/KD8DRX'>ham radio operator</a>, volunteer with <a target='_blank' href='https://itdrc.org'>ITDRC</a>, and an unrepentant maker.",
+    "<br />",
+    "If you're looking for Resumé, <a target='_blank' href='https://kiley.me/kiley-davidson-resume.pdf'>you can find that here</a>."
   ],
   "colors": {
     "background": "#0C0623",
@@ -36,7 +45,7 @@
     "banner": "#FF9951",
     "border": {
       "visible": true,
-      "color": "#FFADE2"
+      "color": "#FF9951"
     },
     "prompt": {
       "default": "#A5A7A7",

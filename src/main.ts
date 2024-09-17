@@ -28,10 +28,13 @@ const PRE_USER = document.getElementById("pre-user");
 const HOST = document.getElementById("host");
 const USER = document.getElementById("user");
 const PROMPT = document.getElementById("prompt");
-const COMMANDS = ["help", "about", "projects", "whoami", "repo", "banner", "clear"];
+const COMMANDS = ["help", "about", "projects", "whoami", "repo", "banner", "clear", "music", "blog", "gui"];
 const HISTORY : string[] = [];
 const SUDO_PASSWORD = command.password;
 const REPO_LINK = command.repoLink;
+const MUSIC_LINK = command.musicLink;
+const BLOG_LINK = command.blogLink;
+const GUI_LINK = command.guiLink;
 
 const scrollToBottom = () => {
   const MAIN = document.getElementById("main");
@@ -158,18 +161,18 @@ function commandHandler(input : string) {
 
         easterEggStyles();
         setTimeout(() => {
-          writeLines(["What made you think that was a good idea?", "<br>"]);
+          writeLines(["Tch. What made you think that was a good idea?", "<br>"]);
         }, 200)
 
         setTimeout(() => {
-          writeLines(["Now everything is ruined.", "<br>"]);
+          writeLines(["Now you've ruined everything.", "<br>"]);
         }, 1200)
 
         } else if (input === "rm -rf src" && bareMode) {
-          writeLines(["there's no more src folder.", "<br>"])
+          writeLines(["(it's all gone. all of it.)", "<br>"])
         } else {
           if(bareMode) {
-            writeLines(["What else are you trying to delete?", "<br>"])
+            writeLines(["what else could we possibly remember to forget?", "<br>"])
           } else {
             writeLines(["<br>", "Directory not found.", "type <span class='command'>'ls'</span> for a list of directories.", "<br>"]);
           }
@@ -191,57 +194,77 @@ function commandHandler(input : string) {
       break;
     case 'banner':
       if(bareMode) {
-        writeLines(["WebShell v1.0.0", "<br>"])
+        writeLines(["brainShell v1.0.1", "<br>"])
         break;
       }
       writeLines(BANNER);
       break;
     case 'help':
       if(bareMode) {
-        writeLines(["maybe restarting your browser will fix this.", "<br>"])
+        writeLines(["maybe reloading the website will fix this.", "<br>"])
         break;
       }
       writeLines(HELP);
       break;
     case 'whoami':      
       if(bareMode) {
-        writeLines([`${command.username}`, "<br>"])
+        writeLines(["g̸̢̦̪͓̫̬͖̓̈́͛o̵̱͒̆̀͋͗̒͠o̵̢͓͉̮̯͉̤̊̉̃̑ḑ̴̝̹̰̬̭̜̇ ̸̭̼͚̣̪̤̾q̵̧̧͖̭̲̹̼̋̓̀͌͐͘ư̷̫̞̠e̶͓̘̊s̵̟̮̺̭̫̎̌̄͐̋ţ̴̛͒͐͝ḯ̴͙ở̸͔̣̣̝̉̒͒̑n̸̩͆̐͘", "<br>"])
         break;
       }
       writeLines(createWhoami());
       break;
     case 'about':
       if(bareMode) {
-        writeLines(["Nothing to see here.", "<br>"])
+        writeLines(["I'll be all right in a minute, I'm just bewildered - by life...", "<br>"])
         break;
       }
       writeLines(ABOUT);
       break;
-    case 'projects':
-      if(bareMode) {
-        writeLines(["I don't want you to break the other projects.", "<br>"])
-        break;
-      }
-      writeLines(PROJECTS);
+    case 'blog':
+      writeLines(["Generating thoughts...", "<br>"]);
+      setTimeout(() => {
+        window.open(BLOG_LINK, '_blank');
+      }, 500);
+      break;
+    case 'gui':
+      writeLines(["Starting Windows...", "<br>"]);
+      setTimeout(() => {
+        window.open(GUI_LINK, '_blank');
+      }, 500);
       break;
     case 'repo':
-      writeLines(["Redirecting to github.com...", "<br>"]);
+      writeLines(["Redirecting...", "<br>"]);
       setTimeout(() => {
         window.open(REPO_LINK, '_blank');
       }, 500);
       break;
+    case 'music':
+      writeLines(["Preparing the jams...", "<br>"]);
+      setTimeout(() => {
+        window.open(MUSIC_LINK, '_blank');
+      }, 500);
+      break;
     case 'linkedin':
-      //add stuff here
+      if(bareMode) {
+        writeLines(["What's 'LinkedIn?' It sounds very...corporate.", "<br>"])
+        break;
+      }
       break;
     case 'github':
-      //add stuff here
+      if(bareMode) {
+        writeLines(["Get what hub, now?", "<br>"])
+        break;
+      }
       break;
     case 'email':
-      //add stuff here
+      if(bareMode) {
+        writeLines(["e...mail? Is that like a telegram?", "<br>"])
+        break;
+      }
       break;
     case 'rm -rf':
       if (bareMode) {
-        writeLines(["don't try again.", "<br>"])
+        writeLines(["Didn't your parents teach you not to play with matches?", "<br>"])
         break;
       }
 
@@ -253,7 +276,7 @@ function commandHandler(input : string) {
         break;
     case 'sudo':
       if(bareMode) {
-        writeLines(["no.", "<br>"])
+        writeLines(["fool me once, fool me twice...no.", "<br>"])
         break;
       }
       if(!PASSWORD) return
@@ -269,7 +292,7 @@ function commandHandler(input : string) {
       break;
     case 'ls':
       if(bareMode) {
-        writeLines(["", "<br>"])
+        writeLines(["How beautiful it is and how easily it can be broken.", "<br>"])
         break;
       }
 
